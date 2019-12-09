@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/app_main_color">
+
+    <com.foxconn.lau.wanandroid.module.customview.TitleBar
+        android:id="@+id/register_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:returnImgSrc="@drawable/title_return"
+        android:background="@color/app_main_color"
+        app:titleText="@string/register_btn"/>
+
+    <com.foxconn.lau.wanandroid.module.customview.PercentImageView
+        android:layout_below="@+id/register_title_bar"
+        android:id="@+id/iv_circle_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="-170dp"
+        android:layout_marginRight="-170dp"
+        android:layout_marginTop="50dp"
+        android:alpha="0.7"
+        android:background="@drawable/bg_solid_round_color_surface"
+        app:piv_basics="width"
+        app:piv_percent="1" />
+
+    <com.foxconn.lau.wanandroid.module.customview.PercentImageView
+        android:layout_below="@+id/register_title_bar"
+        android:id="@+id/iv_circle_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="-150dp"
+        android:layout_marginEnd="-190dp"
+        android:alpha="0.7"
+        android:background="@drawable/bg_solid_round_color_surface"
+        app:piv_basics="width"
+        app:piv_percent="1" />
+
+
+    <LinearLayout
+        android:layout_below="@+id/register_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_user_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/app_main_color"
+            app:boxStrokeWidth="1dp"
+            app:boxBackgroundColor="@android:color/white"
+            android:background="@drawable/login_edit_shape"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_user"
+                android:hint="@string/login_user_hint"
+                android:text="shuai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableStart="@drawable/login_user_img"
+                android:drawablePadding="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_pw_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/app_main_color"
+            app:boxStrokeWidth="1dp"
+            android:background="@drawable/login_edit_shape"
+            app:boxBackgroundColor="@android:color/white"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/login_pw_hint"
+                android:text="123456q"
+                android:layout_margin="5dp"
+                android:drawableStart="@drawable/login_pw_img"
+                android:drawablePadding="10dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_pw_confirm_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/app_main_color"
+            app:boxStrokeWidth="1dp"
+            android:background="@drawable/login_edit_shape"
+            app:boxBackgroundColor="@android:color/white"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_pw_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/login_pw_confirm_hint"
+                android:text="123456q"
+                android:layout_margin="5dp"
+                android:drawableStart="@drawable/login_pw_img"
+                android:drawablePadding="10dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/register_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btn_click_ripper"
+            android:text="@string/register_btn"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+</RelativeLayout>

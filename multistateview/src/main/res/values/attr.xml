@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingResultView">
+        <attr name="LoadingView" format="reference"/>
+        <attr name="ErrorView" format="reference"/>
+        <attr name="EmptyView" format="reference"/>
+        <attr name="ContentView" format="enum">
+            <enum name="content" value="0"/>
+            <enum name="loading" value="1"/>
+            <enum name="error" value="2"/>
+            <enum name="empty" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>

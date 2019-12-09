@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_home"
+        android:icon="@drawable/menu_home_"
+        android:title="@string/main_home"/>
+    <item
+        android:id="@+id/main_system"
+        android:icon="@drawable/menu_knowledge_hierarchy"
+        android:title="@string/main_system"/>
+    <item
+        android:id="@+id/main_public_num"
+        android:icon="@drawable/menu_wechat_sub"
+        android:title="@string/main_public_num"/>
+    <item
+        android:id="@+id/main_project"
+        android:icon="@drawable/menu_project"
+        android:title="@string/main_project"/>
+    <item
+        android:id="@+id/main_my"
+        android:icon="@drawable/menu_me"
+        android:title="@string/main_my"/>
+</menu>

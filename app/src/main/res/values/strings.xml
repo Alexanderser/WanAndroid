@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WanAndroid</string>
+    <string name="image_content_description">图片</string>
+
+
+    <string name="main_home">首页</string>
+    <string name="main_system">体系</string>
+    <string name="main_public_num">公众号</string>
+    <string name="main_project">项目</string>
+    <string name="main_my">我</string>
+
+    <string name="login_user_hint">用户名</string>
+    <string name="login_pw_hint">密码</string>
+    <string name="login_pw_confirm_hint">确认密码</string>
+    <string name="login_login_btn">登录</string>
+    <string name="login_register_tv">注册账号</string>
+    <string name="register_btn">注册</string>
+
+    <string name="article_new_description">新</string>
+    <string name="article_project_description">项目</string>
+
+
+</resources>

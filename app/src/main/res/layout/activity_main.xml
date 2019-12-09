@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.main.MainActivity">
+
+    <com.foxconn.lau.wanandroid.module.customview.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleText="@string/main_home"
+        android:background="@color/app_main_color"
+        app:menuImgSrc="@drawable/main_search"/>
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/main_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/gray_0"
+        app:itemIconTint="@color/main_bottom_icon_select"
+        app:itemTextColor="@color/main_bottom_icon_select"
+        app:menu="@menu/main_bottom"
+        app:labelVisibilityMode="labeled"/>
+
+</LinearLayout>
